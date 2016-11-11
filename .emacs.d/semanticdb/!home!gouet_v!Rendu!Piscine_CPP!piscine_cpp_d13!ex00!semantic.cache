@@ -1,0 +1,108 @@
+;; Object ex00/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ex00/"
+  :tables (list 
+   (semanticdb-table "Picture.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Picture.hh" include nil nil [260 281])
+            ("Picture" function
+               (:constructor-flag t
+                :parent "Picture"
+                :arguments 
+                  ( ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [300 324]))                  
+                :type ("Picture" type (:type "class") nil nil))
+                nil [283 445])
+            ("getPictureFromFile" function
+               (:parent "Picture"
+                :arguments 
+                  ( ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [480 504]))                  
+                :type "bool")
+                nil [447 780]))          
+    :file "Picture.cpp"
+    :pointmax 781
+    :fsize 780
+    :lastmodtime '(22172 44399 231907 877000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Toy.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Toy.hh" include nil nil [252 269])
+            ("Toy" function
+               (:constructor-flag t
+                :parent "Toy"
+                :arguments 
+                  ( ("type" variable (:type ("ToyType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [280 293])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [294 318])
+                    ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [319 343]))                  
+                :type ("Toy" type (:type "class") nil nil))
+                nil [271 446])
+            ("getType" function
+               (:parent "Toy"
+                :type ("Toy::ToyType" type (:type "class") nil nil))
+                nil [448 510])
+            ("getName" function
+               (:parent "Toy"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [512 579])
+            ("setName" function
+               (:parent "Toy"
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [601 624]))                  
+                :type "void")
+                nil [581 670])
+            ("setAscii" function
+               (:parent "Toy"
+                :arguments 
+                  ( ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [693 717]))                  
+                :type "bool")
+                nil [672 773])
+            ("getAscii" function
+               (:parent "Toy"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [775 851]))          
+    :file "Toy.cpp"
+    :pointmax 852
+    :fsize 850
+    :lastmodtime '(22172 44614 101566 421000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Toy.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "Toy.h"
+    :pointmax 784
+    :fsize 783
+    :lastmodtime '(22172 44621 956443 363000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!gouet_v!Rendu!Piscine_CPP!piscine_cpp_d13!ex00!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

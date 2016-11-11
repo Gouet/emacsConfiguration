@@ -1,0 +1,31 @@
+;; Object ex00/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ex00/"
+  :tables (list 
+   (semanticdb-table "my_cat.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [260 279])
+            ("fstream" include (:system-flag t) nil [280 298])
+            ("sstream" include (:system-flag t) nil [299 317])
+            ("string" include (:system-flag t) nil [318 335])
+            ("main" function
+               (:arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [347 354])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [355 365]))                  
+                :type "int")
+                nil [337 826]))          
+    :file "my_cat.cpp"
+    :pointmax 827
+    :fsize 826
+    :lastmodtime '(22163 44177 867366 310000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!gouet_v!Rendu!Piscine_CPP!piscine_cpp_d06!ex00!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

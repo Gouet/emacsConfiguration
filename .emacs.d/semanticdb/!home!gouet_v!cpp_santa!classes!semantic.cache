@@ -1,0 +1,1271 @@
+;; Object classes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "classes/"
+  :tables (list 
+   (semanticdb-table "ElfOfPePeNoel.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ElfOfPePeNoel.hh" include nil nil [256 283])
+            ("ITable.hh" include nil nil [284 304])
+            ("TablePePeNoel.hh" include nil nil [305 332])
+            ("ElfOfPePeNoel" function
+               (:constructor-flag t
+                :parent "ElfOfPePeNoel"
+                :type ("ElfOfPePeNoel" type (:type "class") nil nil))
+                nil [334 403])
+            ("setTool" function
+               (:parent "ElfOfPePeNoel"
+                :arguments 
+                  ( ("box" variable
+                       (:pointer 1
+                        :type ("Box" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [436 445]))                  
+                :type "void")
+                nil [405 490])
+            ("setTool" function
+               (:parent "ElfOfPePeNoel"
+                :arguments 
+                  ( ("giftPaper" variable
+                       (:pointer 1
+                        :type ("GiftPaper" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [520 541]))                  
+                :type "void")
+                nil [492 599])
+            ("setTool" function
+               (:parent "ElfOfPePeNoel"
+                :arguments 
+                  ( ("toy" variable
+                       (:pointer 1
+                        :type ("Toy" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [629 638]))                  
+                :type "void")
+                nil [601 683])
+            ("startWorking" function
+               (:parent "ElfOfPePeNoel"
+                :arguments 
+                  ( ("newTable" variable
+                       (:pointer 1
+                        :type ("ITable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [725 742])
+                    ("newConv" variable
+                       (:pointer 1
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [743 766]))                  
+                :type "void")
+                nil [685 1324])
+            ("canMakeGift" function
+               (:parent "ElfOfPePeNoel"
+                :type "bool")
+                nil [1327 1500])
+            ("needWrap" function
+               (:parent "ElfOfPePeNoel"
+                :type "bool")
+                nil [1502 2019])
+            ("makeGift" function
+               (:parent "ElfOfPePeNoel"
+                :type "void")
+                nil [2021 2697])
+            ("searchOnTable" function
+               (:parent "ElfOfPePeNoel"
+                :type "bool")
+                nil [2699 3014]))          
+    :file "ElfOfPePeNoel.cpp"
+    :pointmax 3015
+    :fsize 3014
+    :lastmodtime '(22173 12219 708857 472000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ElfOfPePeNoel.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ELFOFPEPENOEL_H_" variable (:constant-flag t) nil [291 307])
+            ("IElf.hh" include nil nil [309 327])
+            ("ITable.hh" include nil nil [328 348])
+            ("IConveyorBelt.hh" include nil nil [349 376])
+            ("Box.hh" include nil nil [377 394])
+            ("GiftPaper.hh" include nil nil [395 418])
+            ("ElfOfPePeNoel" type
+               (:superclasses 
+                  ( ("IElf" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [477 484])
+                    ("" type
+                       (:members 
+                          ( ("TOY" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [508 512])
+                            ("BOX" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [521 525])
+                            ("GIFT_PAPER" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [534 550]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [489 551])
+                    ("public" label nil (reparse-symbol classsubparts) [578 585])
+                    ("ElfOfPePeNoel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ElfOfPePeNoel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [590 606])
+                    ("ElfOfPePeNoel" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [611 637])
+                    ("public" label nil (reparse-symbol classsubparts) [665 672])
+                    ("private" label nil (reparse-symbol classsubparts) [674 682])
+                    ("giftTools" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [687 717])
+                    ("table" variable
+                       (:pointer 1
+                        :type ("ITable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [722 745])
+                    ("conv" variable
+                       (:pointer 1
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [750 772])
+                    ("protected" label nil (reparse-symbol classsubparts) [774 784])
+                    ("public" label nil (reparse-symbol classsubparts) [809 816])
+                    ("startWorking" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("newTable" variable
+                               (:pointer 1
+                                :type ("ITable" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [848 865])
+                            ("newConv" variable
+                               (:pointer 1
+                                :type ("IConveyorBelt" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [866 889]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [819 890])
+                    ("private" label nil (reparse-symbol classsubparts) [892 900])
+                    ("setTool" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Toy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [927 933]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [903 934])
+                    ("setTool" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Box" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [961 967]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [937 968])
+                    ("setTool" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("GiftPaper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [995 1007]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [971 1008])
+                    ("protected" label nil (reparse-symbol classsubparts) [1010 1020])
+                    ("searchOnTable" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1023 1052])
+                    ("needWrap" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1055 1079])
+                    ("canMakeGift" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1082 1109])
+                    ("makeGift" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1112 1136])
+                    ("public" label nil (reparse-symbol classsubparts) [1161 1168])
+                    ("public" label nil (reparse-symbol classsubparts) [1193 1200])
+                    ("public" label nil (reparse-symbol classsubparts) [1227 1234])
+                    ("public" label nil (reparse-symbol classsubparts) [1263 1270]))                  
+                :type "class")
+                nil [420 1274]))          
+    :file "ElfOfPePeNoel.hh"
+    :pointmax 1308
+    :fsize 1307
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ELFOFPEPENOEL_H_")
+          )
+
+    )
+   (semanticdb-table "ITable.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ITABLE_H_" variable (:constant-flag t) nil [28 37])
+            ("Object.hh" include nil nil [39 59])
+            ("ITable" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [101 108])
+                    ("ITable" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [113 132])
+                    ("Put" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [154 163]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [137 169])
+                    ("Take" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [195 204]))                          
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [174 209])
+                    ("Look" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 2
+                        :typemodifiers ("virtual")
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [214 249])
+                    ("public" label nil (reparse-symbol classsubparts) [250 257])
+                    ("public" label nil (reparse-symbol classsubparts) [285 292])
+                    ("private" label nil (reparse-symbol classsubparts) [294 302])
+                    ("protected" label nil (reparse-symbol classsubparts) [304 314])
+                    ("public" label nil (reparse-symbol classsubparts) [339 346])
+                    ("private" label nil (reparse-symbol classsubparts) [348 356])
+                    ("protected" label nil (reparse-symbol classsubparts) [358 368])
+                    ("public" label nil (reparse-symbol classsubparts) [393 400])
+                    ("public" label nil (reparse-symbol classsubparts) [425 432])
+                    ("public" label nil (reparse-symbol classsubparts) [459 466])
+                    ("public" label nil (reparse-symbol classsubparts) [495 502]))                  
+                :type "class")
+                nil [61 506]))          
+    :file "ITable.hh"
+    :pointmax 533
+    :fsize 532
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax '((punctuation 162 . 163))
+    :lexical-table 
+        '(("ITABLE_H_")
+          )
+
+    )
+   (semanticdb-table "TablePePeNoel.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TABLEPEPENOEL_H_" variable (:constant-flag t) nil [35 51])
+            ("string" include (:system-flag t) nil [53 70])
+            ("iostream" include (:system-flag t) nil [71 90])
+            ("vector" include (:system-flag t) nil [91 108])
+            ("fstream" include (:system-flag t) nil [109 127])
+            ("ITable.hh" include nil nil [128 148])
+            ("TablePePeNoel" type
+               (:superclasses 
+                  ( ("ITable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [188 195])
+                    ("TablePePeNoel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("TablePePeNoel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [200 216])
+                    ("TablePePeNoel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [221 246])
+                    ("Put" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [268 277]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [251 279])
+                    ("Take" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [305 314]))                          
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [284 315])
+                    ("Look" function
+                       (:prototype-flag t
+                        :pointer 2
+                        :typemodifiers ("virtual")
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [320 351])
+                    ("public" label nil (reparse-symbol classsubparts) [353 360])
+                    ("getObject" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [389 397]))                          
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [365 404])
+                    ("createTable" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("ITable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [409 438])
+                    ("protected" label nil (reparse-symbol classsubparts) [440 450])
+                    ("TableCollapse" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [474 479]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [455 486])
+                    ("protected" label nil (reparse-symbol classsubparts) [488 498])
+                    ("_objs" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Object" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [503 530]))                  
+                :type "class")
+                nil [150 533])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [560 581])
+                    ("tablePePeNoel" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("TablePePeNoel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [582 617]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [535 618]))          
+    :file "TablePePeNoel.hh"
+    :pointmax 652
+    :fsize 651
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax '((punctuation 276 . 277))
+    :lexical-table 
+        '(("TABLEPEPENOEL_H_")
+          )
+
+    )
+   (semanticdb-table "IElf.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IELF_H_" variable (:constant-flag t) nil [274 281])
+            ("Object.hh" include nil nil [283 303])
+            ("Toy.hh" include nil nil [304 321])
+            ("Box.hh" include nil nil [322 339])
+            ("GiftPaper.hh" include nil nil [340 363])
+            ("ITable.hh" include nil nil [364 384])
+            ("IConveyorBelt.hh" include nil nil [385 412])
+            ("IElf" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [454 461])
+                    ("public" label nil (reparse-symbol classsubparts) [494 501])
+                    ("IElf" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [506 522])
+                    ("public" label nil (reparse-symbol classsubparts) [556 563])
+                    ("private" label nil (reparse-symbol classsubparts) [565 573])
+                    ("protected" label nil (reparse-symbol classsubparts) [575 585])
+                    ("public" label nil (reparse-symbol classsubparts) [616 623])
+                    ("startWorking" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("newTable" variable
+                               (:pointer 1
+                                :type ("ITable" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [654 671])
+                            ("newConv" variable
+                               (:pointer 1
+                                :type ("IConveyorBelt" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [672 695]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [628 700])
+                    ("private" label nil (reparse-symbol classsubparts) [702 710])
+                    ("protected" label nil (reparse-symbol classsubparts) [712 722])
+                    ("searchOnTable" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [727 760])
+                    ("needWrap" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [766 794])
+                    ("canMakeGift" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [800 831])
+                    ("makeGift" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [837 865])
+                    ("public" label nil (reparse-symbol classsubparts) [896 903])
+                    ("public" label nil (reparse-symbol classsubparts) [934 941])
+                    ("public" label nil (reparse-symbol classsubparts) [974 981])
+                    ("public" label nil (reparse-symbol classsubparts) [1016 1023]))                  
+                :type "class")
+                nil [414 1027]))          
+    :file "IElf.hh"
+    :pointmax 1052
+    :fsize 1051
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IELF_H_")
+          )
+
+    )
+   (semanticdb-table "IConveyorBelt.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ICONVEYORBELT_H_" variable (:constant-flag t) nil [35 51])
+            ("Object.hh" include nil nil [53 73])
+            ("Button" type
+               (:members 
+                  ( ("IN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [93 96])
+                    ("OUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [101 105])
+                    ("Zwify" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [110 117]))                  
+                :type "enum")
+                nil [75 118])
+            ("IConveyorBelt" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [163 170])
+                    ("public" label nil (reparse-symbol classsubparts) [197 204])
+                    ("IConveyorBelt" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [209 235])
+                    ("public" label nil (reparse-symbol classsubparts) [263 270])
+                    ("private" label nil (reparse-symbol classsubparts) [272 280])
+                    ("protected" label nil (reparse-symbol classsubparts) [282 292])
+                    ("public" label nil (reparse-symbol classsubparts) [321 328])
+                    ("PressButton" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pressed" variable (:type ("Button" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [377 392]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [333 397])
+                    ("Look" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [434 451])
+                    ("PutObject" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [498 507]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [456 513])
+                    ("TakeObject" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [518 568])
+                    ("private" label nil (reparse-symbol classsubparts) [630 638])
+                    ("protected" label nil (reparse-symbol classsubparts) [640 650])
+                    ("public" label nil (reparse-symbol classsubparts) [675 682])
+                    ("public" label nil (reparse-symbol classsubparts) [707 714])
+                    ("public" label nil (reparse-symbol classsubparts) [741 748])
+                    ("public" label nil (reparse-symbol classsubparts) [777 784]))                  
+                :type "class")
+                nil [120 788]))          
+    :file "IConveyorBelt.hh"
+    :pointmax 822
+    :fsize 821
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax '((punctuation 506 . 507) (punctuation 423 . 424) (CONST 418 . 423) (punctuation 416 . 417) (symbol 410 . 416) (VIRTUAL 402 . 409))
+    :lexical-table 
+        '(("ICONVEYORBELT_H_")
+          )
+
+    )
+   (semanticdb-table "Box.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOX_H_" variable (:constant-flag t) nil [286 292])
+            ("Wrap.hh" include nil nil [294 313])
+            ("Box" type
+               (:superclasses 
+                  ( ("Wrap" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [368 375])
+                    ("public" label nil (reparse-symbol classsubparts) [408 415])
+                    ("Box" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [424 442]))                          
+                        :type ("Box" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [420 450])
+                    ("Box" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [456 471])
+                    ("Box" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Box" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [481 493]))                          
+                        :type ("Box" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [477 494])
+                    ("public" label nil (reparse-symbol classsubparts) [527 534])
+                    ("private" label nil (reparse-symbol classsubparts) [536 544])
+                    ("isOpen_" variable (:type "bool") (reparse-symbol classsubparts) [549 562])
+                    ("protected" label nil (reparse-symbol classsubparts) [563 573])
+                    ("public" label nil (reparse-symbol classsubparts) [604 611])
+                    ("isOpen" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [616 630])
+                    ("getObject" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [636 670])
+                    ("wrapMeThat" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [700 709]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [676 711])
+                    ("openMe" variable (:type "int") (reparse-symbol classsubparts) [733 743])
+                    ("serialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [749 781])
+                    ("closeMe" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [787 802])
+                    ("setObj" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [828 838]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [808 839])
+                    ("private" label nil (reparse-symbol classsubparts) [841 849])
+                    ("protected" label nil (reparse-symbol classsubparts) [851 861])
+                    ("public" label nil (reparse-symbol classsubparts) [892 899])
+                    ("public" label nil (reparse-symbol classsubparts) [930 937])
+                    ("public" label nil (reparse-symbol classsubparts) [970 977])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Box" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1000 1012]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [982 1013])
+                    ("public" label nil (reparse-symbol classsubparts) [1047 1054]))                  
+                :type "class")
+                nil [315 1058]))          
+    :file "Box.hh"
+    :pointmax 1081
+    :fsize 1080
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax '((punctuation 732 . 733) (symbol 725 . 731) (VIRTUAL 717 . 724) (punctuation 708 . 709) (string 443 . 448) (punctuation 441 . 442))
+    :lexical-table 
+        '(("BOX_H_")
+          )
+
+    )
+   (semanticdb-table "GiftPaper.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GIFTPAPER_H_" variable (:constant-flag t) nil [304 316])
+            ("Wrap.hh" include nil nil [318 337])
+            ("GiftPaper" type
+               (:superclasses 
+                  ( ("Wrap" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [398 405])
+                    ("public" label nil (reparse-symbol classsubparts) [438 445])
+                    ("GiftPaper" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [460 478]))                          
+                        :type ("GiftPaper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [450 492])
+                    ("GiftPaper" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [498 519])
+                    ("GiftPaper" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("GiftPaper" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [535 553]))                          
+                        :type ("GiftPaper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [525 554])
+                    ("public" label nil (reparse-symbol classsubparts) [587 594])
+                    ("private" label nil (reparse-symbol classsubparts) [596 604])
+                    ("protected" label nil (reparse-symbol classsubparts) [606 616])
+                    ("public" label nil (reparse-symbol classsubparts) [647 654])
+                    ("wrapMeThat" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [683 692]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [659 694])
+                    ("openMe" variable (:type "int") (reparse-symbol classsubparts) [716 726])
+                    ("getObject" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [732 766])
+                    ("setObj" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [792 802]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [772 803])
+                    ("serialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [809 841])
+                    ("private" label nil (reparse-symbol classsubparts) [843 851])
+                    ("protected" label nil (reparse-symbol classsubparts) [853 863])
+                    ("public" label nil (reparse-symbol classsubparts) [894 901])
+                    ("public" label nil (reparse-symbol classsubparts) [932 939])
+                    ("public" label nil (reparse-symbol classsubparts) [972 979])
+                    ("public" label nil (reparse-symbol classsubparts) [1013 1020]))                  
+                :type "class")
+                nil [339 1024]))          
+    :file "GiftPaper.hh"
+    :pointmax 1054
+    :fsize 1053
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax '((punctuation 715 . 716) (symbol 708 . 714) (VIRTUAL 700 . 707) (punctuation 691 . 692) (string 479 . 490) (punctuation 477 . 478))
+    :lexical-table 
+        '(("GIFTPAPER_H_")
+          )
+
+    )
+   (semanticdb-table "Object.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("OBJECT_H_" variable (:constant-flag t) nil [281 290])
+            ("iostream" include (:system-flag t) nil [292 311])
+            ("fstream" include (:system-flag t) nil [312 330])
+            ("Object" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [374 381])
+                    ("public" label nil (reparse-symbol classsubparts) [414 421])
+                    ("Object" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [433 445]))                          
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [426 446])
+                    ("Object" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [452 470])
+                    ("public" label nil (reparse-symbol classsubparts) [504 511])
+                    ("private" label nil (reparse-symbol classsubparts) [513 521])
+                    ("_title" variable
+                       (:constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [526 551])
+                    ("protected" label nil (reparse-symbol classsubparts) [553 563])
+                    ("_serial" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [568 588])
+                    ("public" label nil (reparse-symbol classsubparts) [619 626])
+                    ("serialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [631 663])
+                    ("setObj" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [695 705]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [668 710])
+                    ("isTaken" function
+                       (:typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [715 761])
+                    ("private" label nil (reparse-symbol classsubparts) [763 771])
+                    ("protected" label nil (reparse-symbol classsubparts) [773 783])
+                    ("public" label nil (reparse-symbol classsubparts) [814 821])
+                    ("getTitle" function
+                       (:prototype-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [825 861])
+                    ("MyUnitTests" function
+                       (:prototype-flag t
+                        :pointer 2
+                        :typemodifiers ("static")
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [864 894])
+                    ("MyUnitTests" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [924 934]))                          
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [897 935])
+                    ("public" label nil (reparse-symbol classsubparts) [960 967])
+                    ("public" label nil (reparse-symbol classsubparts) [1000 1007])
+                    ("public" label nil (reparse-symbol classsubparts) [1041 1048]))                  
+                :type "class")
+                nil [332 1052])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("output" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1079 1100])
+                    ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1101 1121]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [1054 1122]))          
+    :file "Object.hh"
+    :pointmax 1149
+    :fsize 1148
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OBJECT_H_")
+          )
+
+    )
+   (semanticdb-table "Toy.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("TOY_H_" variable (:constant-flag t) nil [272 278])
+            ("Object.hh" include nil nil [280 301])
+            ("Toy" type
+               (:superclasses 
+                  ( ("Object" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [352 359])
+                    ("public" label nil (reparse-symbol classsubparts) [386 393])
+                    ("Toy" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [400 412]))                          
+                        :type ("Toy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [396 413])
+                    ("Toy" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [416 431])
+                    ("Toy" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Toy" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [438 450]))                          
+                        :type ("Toy" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [434 451])
+                    ("public" label nil (reparse-symbol classsubparts) [479 486])
+                    ("private" label nil (reparse-symbol classsubparts) [488 496])
+                    ("protected" label nil (reparse-symbol classsubparts) [498 508])
+                    ("p_isTaken" variable (:type "bool") (reparse-symbol classsubparts) [511 526])
+                    ("public" label nil (reparse-symbol classsubparts) [551 558])
+                    ("isTaken" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [563 595])
+                    ("serialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [600 634])
+                    ("setObj" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [670 680]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [639 681])
+                    ("private" label nil (reparse-symbol classsubparts) [683 691])
+                    ("protected" label nil (reparse-symbol classsubparts) [693 703])
+                    ("public" label nil (reparse-symbol classsubparts) [728 735])
+                    ("public" label nil (reparse-symbol classsubparts) [760 767])
+                    ("public" label nil (reparse-symbol classsubparts) [794 801])
+                    ("public" label nil (reparse-symbol classsubparts) [830 837]))                  
+                :type "class")
+                nil [303 843]))          
+    :file "Toy.hh"
+    :pointmax 867
+    :fsize 866
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TOY_H_")
+          )
+
+    )
+   (semanticdb-table "Wrap.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("WRAP_H_" variable (:constant-flag t) nil [289 296])
+            ("Object.hh" include nil nil [298 319])
+            ("Wrap" type
+               (:superclasses 
+                  ( ("Object" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [377 384])
+                    ("Wrap" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [394 406]))                          
+                        :type ("Wrap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [389 407])
+                    ("Wrap" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [413 429])
+                    ("Wrap" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Wrap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [440 453]))                          
+                        :type ("Wrap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [435 454])
+                    ("public" label nil (reparse-symbol classsubparts) [486 493])
+                    ("public" label nil (reparse-symbol classsubparts) [527 534])
+                    ("private" label nil (reparse-symbol classsubparts) [536 544])
+                    ("protected" label nil (reparse-symbol classsubparts) [546 556])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [561 576])
+                    ("public" label nil (reparse-symbol classsubparts) [606 613])
+                    ("wrapMeThat" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [642 651]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [618 657])
+                    ("openMe" variable (:type "int") (reparse-symbol classsubparts) [679 689])
+                    ("getObject" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [695 729])
+                    ("serialize" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [735 767])
+                    ("setObj" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 2
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [793 803]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [773 811])
+                    ("private" label nil (reparse-symbol classsubparts) [813 821])
+                    ("protected" label nil (reparse-symbol classsubparts) [823 833])
+                    ("public" label nil (reparse-symbol classsubparts) [864 871])
+                    ("public" label nil (reparse-symbol classsubparts) [902 909])
+                    ("public" label nil (reparse-symbol classsubparts) [942 949])
+                    ("public" label nil (reparse-symbol classsubparts) [983 990]))                  
+                :type "class")
+                nil [321 994])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("output" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1024 1045])
+                    ("wrap" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Wrap" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1046 1063]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [996 1064]))          
+    :file "Wrap.hh"
+    :pointmax 1089
+    :fsize 1088
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax '((punctuation 678 . 679) (symbol 671 . 677) (VIRTUAL 663 . 670) (punctuation 650 . 651))
+    :lexical-table 
+        '(("WRAP_H_")
+          )
+
+    )
+   (semanticdb-table "ConveyorBeltRand.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CONVEYORBELTRAND_H_" variable (:constant-flag t) nil [38 57])
+            ("fstream" include (:system-flag t) nil [59 77])
+            ("vector" include (:system-flag t) nil [78 95])
+            ("ConveyorBeltPePeNoel.hh" include nil nil [97 131])
+            ("Box.hh" include nil nil [132 149])
+            ("GiftPaper.hh" include nil nil [150 173])
+            ("ConveyorBeltRand" type
+               (:superclasses 
+                  ( ("ConveyorBeltPePeNoel" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [251 258])
+                    ("public" label nil (reparse-symbol classsubparts) [285 292])
+                    ("ConveyorBeltRand" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ConveyorBeltRand" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [297 316])
+                    ("ConveyorBeltRand" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [321 349])
+                    ("public" label nil (reparse-symbol classsubparts) [377 384])
+                    ("private" label nil (reparse-symbol classsubparts) [386 394])
+                    ("xmlFile" variable (:type ("std::ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [399 435])
+                    ("sendObjects" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [440 480])
+                    ("protected" label nil (reparse-symbol classsubparts) [482 492])
+                    ("public" label nil (reparse-symbol classsubparts) [517 524])
+                    ("createConveyorBelt" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [529 583])
+                    ("PressButton" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pressed" variable (:type ("Button" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [632 647]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [588 648])
+                    ("private" label nil (reparse-symbol classsubparts) [650 658])
+                    ("protected" label nil (reparse-symbol classsubparts) [660 670])
+                    ("public" label nil (reparse-symbol classsubparts) [695 702])
+                    ("public" label nil (reparse-symbol classsubparts) [727 734])
+                    ("public" label nil (reparse-symbol classsubparts) [761 768])
+                    ("public" label nil (reparse-symbol classsubparts) [797 804]))                  
+                :type "class")
+                nil [175 808]))          
+    :file "ConveyorBeltRand.hh"
+    :pointmax 843
+    :fsize 842
+    :lastmodtime '(22171 36056 23325 105000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CONVEYORBELTRAND_H_")
+          )
+
+    )
+   (semanticdb-table "ConveyorBeltPePeNoel.hh"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("CONVEYORBELTPEPENOEL_H_" variable (:constant-flag t) nil [42 65])
+            ("Object.hh" include nil nil [67 87])
+            ("IConveyorBelt.hh" include nil nil [88 115])
+            ("Wrap.hh" include nil nil [116 134])
+            ("ConveyorBeltPePeNoel" type
+               (:superclasses 
+                  ( ("IConveyorBelt" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [209 216])
+                    ("public" label nil (reparse-symbol classsubparts) [243 250])
+                    ("ConveyorBeltPePeNoel" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ConveyorBeltPePeNoel" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [255 278])
+                    ("ConveyorBeltPePeNoel" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [283 315])
+                    ("public" label nil (reparse-symbol classsubparts) [343 350])
+                    ("private" label nil (reparse-symbol classsubparts) [352 360])
+                    ("lastIsBox" variable (:type "bool") (reparse-symbol classsubparts) [365 391])
+                    ("protected" label nil (reparse-symbol classsubparts) [393 403])
+                    ("_tool" variable
+                       (:pointer 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [408 431])
+                    ("public" label nil (reparse-symbol classsubparts) [455 462])
+                    ("createConveyorBelt" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("static")
+                        :type ("IConveyorBelt" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [467 521])
+                    ("Look" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [558 571])
+                    ("PressButton" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pressed" variable (:type ("Button" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [620 635]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [576 636])
+                    ("PutObject" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [683 692]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [641 694])
+                    ("TakeObject" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :typemodifiers ("virtual")
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [699 745])
+                    ("private" label nil (reparse-symbol classsubparts) [747 755])
+                    ("protected" label nil (reparse-symbol classsubparts) [757 767])
+                    ("public" label nil (reparse-symbol classsubparts) [792 799])
+                    ("getTool" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [836 852])
+                    ("public" label nil (reparse-symbol classsubparts) [877 884])
+                    ("public" label nil (reparse-symbol classsubparts) [911 918])
+                    ("public" label nil (reparse-symbol classsubparts) [947 954]))                  
+                :type "class")
+                nil [136 958])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("output" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [988 1009])
+                    ("conveyorBeltPePeNoel" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ConveyorBeltPePeNoel" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1010 1059]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [960 1060]))          
+    :file "ConveyorBeltPePeNoel.hh"
+    :pointmax 1100
+    :fsize 1099
+    :lastmodtime '(22172 39930 218742 578000)
+    :unmatched-syntax '((punctuation 818 . 819) (CONST 813 . 818) (punctuation 811 . 812) (symbol 804 . 810) (punctuation 691 . 692) (punctuation 547 . 548) (CONST 542 . 547) (punctuation 540 . 541) (symbol 534 . 540) (VIRTUAL 526 . 533))
+    :lexical-table 
+        '(("CONVEYORBELTPEPENOEL_H_")
+          )
+
+    )
+   (semanticdb-table "ConveyorBeltRand.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdlib" include (:system-flag t) nil [1 19])
+            ("ConveyorBeltRand.hh" include nil nil [20 50])
+            ("ConveyorBeltRand" function
+               (:constructor-flag t
+                :parent "ConveyorBeltRand"
+                :type ("ConveyorBeltRand" type (:type "class") nil nil))
+                nil [52 149])
+            ("ConveyorBeltRand" function
+               (:destructor-flag t
+                :parent "ConveyorBeltRand"
+                :type "void")
+                nil [151 253])
+            ("createConveyorBelt" function
+               (:pointer 1
+                :parent "ConveyorBeltRand"
+                :type ("IConveyorBelt" type (:type "class") nil nil))
+                nil [255 349])
+            ("PressButton" function
+               (:parent "ConveyorBeltRand"
+                :arguments 
+                  ( ("pressed" variable (:type ("Button" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [386 401]))                  
+                :type "void")
+                nil [351 1624]))          
+    :file "ConveyorBeltRand.cpp"
+    :pointmax 1625
+    :fsize 1624
+    :lastmodtime '(22172 40262 713799 948000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!gouet_v!cpp_santa!classes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

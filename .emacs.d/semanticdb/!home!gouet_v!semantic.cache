@@ -1,0 +1,33 @@
+;; Object gouet_v/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gouet_v/"
+  :tables (list 
+   (semanticdb-table "toto.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("strings.h" include (:system-flag t) nil [215 235])
+            ("iostream" include (:system-flag t) nil [236 255])
+            ("Kolala" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [272 279])
+                    ("toto" variable (:type "int") (reparse-symbol classsubparts) [282 291])
+                    ("public" label nil (reparse-symbol classsubparts) [293 300])
+                    ("Kolala" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Kolala" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [303 312]))                  
+                :type "class")
+                nil [257 315])
+            ("main" function (:type "int") nil [317 506]))          
+    :file "toto.cpp"
+    :pointmax 490
+    :fsize 506
+    :lastmodtime '(22173 12266 906085 421000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!gouet_v!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
